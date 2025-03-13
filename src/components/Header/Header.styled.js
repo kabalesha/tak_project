@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
-  .header {
-    padding-top: 16px;
+export const Container = styled.div`
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 834px) {
+    width: 800px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-
-  @media screen and (min-width: 1280px) {
-    .header {
-      position: absolute;
-      top: 28px;
-      z-index: 100;
-      width: 100%;
-      --shift-from-x: 0;
-      --shift-to-x: 0;
-      animation: move-vertical 1000ms ease-out 1000ms both;
-    }
+  @media screen and (min-width: 1440px) {
+    width: 1372px;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 104px;
   }
 `;
+
+export const Header = styled.header``;
